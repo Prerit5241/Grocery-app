@@ -43,7 +43,7 @@ export default function Grocery() {
   } = useCart();
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800">
+    <div className="min-h-screen bg-white text-gray-800 overflow-x-hidden">
 
       <Header
         cartCount={cartCount}

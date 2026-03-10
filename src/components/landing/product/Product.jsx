@@ -33,7 +33,7 @@ export default function Product({ product, addToCart }) {
       ${isOpen ? "z-50" : ""}`}
     >
       {/* IMAGE */}
-      <div className="relative h-56 bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-2xl">
+      <div className="relative h-48 xs:h-56 bg-gray-100 flex items-center justify-center overflow-hidden rounded-t-2xl">
         <img
           src={product.img}
           alt={product.name}
@@ -64,7 +64,7 @@ export default function Product({ product, addToCart }) {
       </div>
 
       {/* CONTENT */}
-      <div className="p-5 flex flex-col flex-grow">
+      <div className="p-4 sm:p-5 flex flex-col flex-grow">
 
         {/* Brand */}
         {product.brand && (
@@ -203,7 +203,7 @@ export default function Product({ product, addToCart }) {
 
           <button
             onClick={() => addToCart(product, selectedVariant)}
-            className="w-full mt-3 bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
+            className="w-full mt-3 bg-green-500 hover:bg-green-600 text-white py-2 rounded-lg font-semibold transition-all duration-300 hover:scale-105 active:scale-95 shadow-md"
           >
             Add to Cart
           </button>

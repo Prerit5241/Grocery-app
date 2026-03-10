@@ -34,7 +34,10 @@ export default function useCart() {
       ]);
     }
 
-    setIsCartOpen(true);
+    // Only open cart drawer on desktop (wider than 1024px)
+    if (window.innerWidth >= 1024) {
+      setIsCartOpen(true);
+    }
   };
 
   // ➕ Increase Quantity

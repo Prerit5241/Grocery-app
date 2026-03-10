@@ -8,13 +8,14 @@ export default function Section({ id, title, data, addToCart }) {
         {title}
       </h2>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <div className="flex md:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8 overflow-x-auto md:overflow-x-visible pb-4 snap-x snap-mandatory [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
         {data.map((product) => (
-          <Product
-            key={product.id}
-            product={product}
-            addToCart={addToCart}
-          />
+          <div key={product.id} className="min-w-[260px] xs:min-w-[320px] md:min-w-0 snap-start">
+            <Product
+              product={product}
+              addToCart={addToCart}
+            />
+          </div>
         ))}
       </div>
 
