@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Not Found | bigbasket.com</title>
+    <!-- Favicon link added -->
+    <link rel="icon" type="image/x-icon" href="https://www.bbassets.com/static/v2843/images/favicon.ico?v=2843">
+    <style>
+      /* --- Global Styles --- */
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #f7f7f7; /* Light gray background */
+        font-family: 'Inter', sans-serif; /* Using a modern default font */
+        color: #4a4a4a;
+        line-height: 1.6;
+        text-align: center; /* Ensure all inline content is centered */
+      }
+      .container {
+        max-width: 500px;
+        padding: 50px 40px; /* Increased vertical padding */
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1); /* Stronger, softer shadow */
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center items vertically in the flex container */
+      }
+
+      /* --- Visual Elements --- */
+      .illustration {
+        margin-bottom: 25px;
+      }
+      .illustration img {
+        height: 108px;
+        /* Image is naturally centered within its parent .illustration div due to flex alignment */
+      }
+      /* Removed .error-code CSS */
+
+      /* --- Text Content --- */
+      .title {
+        font-size: 32px; /* Slightly larger title */
+        font-weight: 700;
+        color: #2c3e50;
+        margin-top: 20px;
+        margin-bottom: 15px;
+      }
+      .text {
+        font-size: 16px;
+        color: #7f8c8d;
+        margin: 0;
+        padding: 0 10px;
+      }
+      .subtext {
+        margin-top: 15px;
+        margin-bottom: 40px; /* More space before button */
+      }
+
+      /* --- Button Style --- */
+      .btn {
+        display: inline-block;
+        border: none;
+        border-radius: 8px; /* Slightly more rounded */
+        font-size: 17px; /* Slightly larger text */
+        font-weight: 600;
+        color: #fff;
+        padding: 15px 30px; /* Larger padding for better touch target */
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.1s ease;
+        text-decoration: none;
+      }
+      .btn-primary {
+        background: #27ae60; /* Using a vibrant green color, often associated with BigBasket */
+      }
+      .btn-primary:hover {
+        background: #229954;
+        transform: translateY(-1px);
+      }
+      .btn-primary:active {
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="illustration">
+        <img
+          src="https://www.bbassets.com/bb2assets/pwa-icons/icons/bb-logo.png"
+          alt="bigbasket Logo"
+        />
+      </div>
+
+      <!-- Removed: <p class="error-code">404</p> -->
+      
+      <h1 class="title">This page doesn't exist.</h1>
+      
+      <p class="text subtext">
+        Uh-oh! Looks like this page took a wrong turn.
+        <br />
+        Our engineers are fixing it.
+        <br />
+        Don't worry, your groceries are safe!
+      </p>
+
+      <button
+        class="btn btn-primary"
+        type="button"
+        onclick="window.location.href='https://www.bigbasket.com'"
+      >
+        Go To Home Page
+      </button>
+    </div>
+  </body>
+</html>
